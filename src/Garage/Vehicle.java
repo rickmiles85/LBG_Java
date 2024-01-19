@@ -9,6 +9,7 @@ public abstract class Vehicle {
 	protected int wheel;
 	protected boolean fastSpeed;
 	protected int id;
+	protected static int count = 0;
 
 	/**
 	 * @return the id
@@ -25,18 +26,18 @@ public abstract class Vehicle {
 	}
 
 	// count = 1 make sure it starts at 1.
-	protected static int count = 1;
+
 	// the parameters need to be different from the one below otherwise it will
 	// break
 
 	public Vehicle() {
 		super();
-		this.id = count++;
+		this.id = ++count;
 	}
 
 	public Vehicle(String name, int wheel, boolean fastSpeed) {
 		super();
-		this.id = count++;
+		this.id = ++count;
 		this.setName(name);
 		this.setWheel(wheel);
 		this.setFastSpeed(fastSpeed);
@@ -55,8 +56,8 @@ public abstract class Vehicle {
 
 	@Override
 	public String toString() {
-		return "Vehicle [name=" + name + ", wheel=" + wheel + ", fastSpeed=" + fastSpeed + ", getClass()=" + getClass()
-				+ "]";
+		return "Vehicle [name=" + name + ", wheel=" + wheel + ", fastSpeed=" + fastSpeed + ", id=" + id + ", getId()="
+				+ getId() + ", getName()=" + getName() + ", getWheel()=" + getWheel() + "]";
 	}
 
 	@Override

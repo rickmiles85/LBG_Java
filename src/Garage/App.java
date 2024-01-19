@@ -5,6 +5,7 @@ import java.util.List;
 public class App {
 
 	private static final String vehicle = null;
+
 	public static void main(String[] args) {
 
 		Car porsche = new Car(null, 0, false);
@@ -78,13 +79,6 @@ public class App {
 
 		List<Vehicle> vehicles = List.of(new Car(), new Bike());
 
-	public boolean driveIn(Vehicle v) {
-		return this.vehicle.add(v);
-		{
-
-			myGarage.fix();
-
-		}
-
 	}
+
 }

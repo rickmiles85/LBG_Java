@@ -25,9 +25,8 @@ public class Car extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Car [sportsCar=" + sportsCar + ", name=" + name + ", wheel=" + wheel + ", fastSpeed=" + fastSpeed
-				+ ", hashCode()=" + hashCode() + ", getName()=" + getName() + ", getWheel()=" + getWheel()
-				+ ", isFastSpeed()=" + isFastSpeed() + ", toString()=" + super.toString() + "]";
+		return "Car [sportsCar=" + sportsCar + ", getId()=" + getId() + ", getName()=" + getName() + ", getWheel()="
+				+ getWheel() + ", isFastSpeed()=" + isFastSpeed() + "]";
 	}
 
 	void setSports(boolean sportsCar) {
