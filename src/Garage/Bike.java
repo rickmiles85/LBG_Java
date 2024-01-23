@@ -2,7 +2,7 @@ package Garage;
 
 import java.util.Objects;
 
-public class Bike extends Vehicle {
+public class Bike extends Vehicle implements Driveable {
 
 	private boolean sideCar;
 
@@ -59,6 +59,19 @@ public class Bike extends Vehicle {
 		}
 		Bike other = (Bike) obj;
 		return sideCar == other.sideCar;
+	}
+
+	@Override
+	public int compareTo(Vehicle o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void drive() {
+		// TODO Auto-generated method stub
+		System.out.println("Drive with Handle Bars");
+
 	}
 
 	// @Override

@@ -1,6 +1,6 @@
 package Garage;
 
-public class Car extends Vehicle {
+public class Car extends Vehicle implements Driveable {
 
 	private boolean sportsCar;
 
@@ -32,6 +32,19 @@ public class Car extends Vehicle {
 	void setSports(boolean sportsCar) {
 
 		this.sportsCar = sportsCar;
+
+	}
+
+	@Override
+	public int compareTo(Vehicle o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void drive() {
+		// TODO Auto-generated method stub
+		System.out.println("Drive with Steering Wheel");
 
 	}
 }

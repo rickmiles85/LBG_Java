@@ -2,7 +2,8 @@ package Garage;
 
 import java.util.Objects;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Comparable<Vehicle> {
+
 // needed to change string from private to protected?
 
 	protected String name;

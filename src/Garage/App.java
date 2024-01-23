@@ -1,5 +1,6 @@
 package Garage;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class App {
@@ -78,6 +79,27 @@ public class App {
 		System.out.println(bike2);
 
 		List<Vehicle> vehicles = List.of(new Car(), new Bike());
+
+//		List<Integer> nums = new ArrayList<>();
+//		nums.add(5);
+//		nums.add(253);
+//		nums.add(15874);
+//		nums.add(156);
+//		nums.add(333);
+
+		// System.out.println("Numbers: " + nums);
+		// ;
+
+		List<Driveable> driving = new ArrayList<>();
+
+		driving.add(new Car();
+		driving.add(new Bike();
+
+		for (Driveable driving : driving) {
+			driving.drive();
+
+			System.out.println();
+		}
 
 	}
 
